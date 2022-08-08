@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microblog</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar__brand">
+            <img src="microblog-logo.svg" alt="Microblog Logo">Microblog
+        </div>
+        <ul class="navbar__navigation">
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
+            <li class="navbar__navigation-item"><a href="#" class="navbar__link">Calendar</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h1>Add new Entry</h1>
+            <form action="/entry" method="post">
+                <p class="form__input">
+                    <label for="entry">Entry Contents</label>
+                    <textarea name="content" id="entry"></textarea>
+                </p>
+
+                <button type="submit">Add Entry</button>
+
+            </form>
+
+        </section>
+
+        <section>
+            <h1>Recent Posts</h1>
+            <article>
+                <div>
+                    <h2>A bit of a chill day</h2>
+                    <time datetime="01-05-2022">May 1</time>
+                </div>
+                <p>Today, I traveled to Kumasi.I did not code.</p>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a href="#" class="footer__item">Made with ❤ by Mayfred Kekeli Norgbey</a>
+                <a href="#" class="footer__item">Check out my other projects.</a>
+            </section>
+
+            <section class="right">
+                <div class="footer__column">
+                    <a href="#" class="footer__item">Recents</a>
+                    <a href="#" class="footer__item">Calendar.</a>
+                </div>
+
+                <div class="footer__column">
+                    <a href="#" class="footer__item">About</a>
+                    <a href="#" class="footer__item">How This was Made.</a>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
