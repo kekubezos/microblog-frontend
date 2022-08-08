@@ -20,9 +20,12 @@
         <section>
             <h1>Add new Entry</h1>
             <form action="/entry" method="post">
-                <label for="sample-field">Sample:</label>
-                <input type="text" name="sample" id="sample-field">
-                <button type="submit">Submit</button>
+                <p class="form__input">
+                    <label for="entry">Entry Contents</label>
+                    <textarea name="content" id="entry"></textarea>
+                </p>
+
+                <button type="submit">Add Entry</button>
 
             </form>
 
@@ -42,8 +45,25 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="left">
+                <a href="#" class="footer__item">Made with ❤ by Mayfred Kekeli Norgbey</a>
+                <a href="#" class="footer__item">Check out my other projects.</a>
+            </section>
 
+            <section class="right">
+                <div class="footer__column">
+                    <a href="#" class="footer__item">Recents</a>
+                    <a href="#" class="footer__item">Calendar.</a>
+                </div>
+
+                <div class="footer__column">
+                    <a href="#" class="footer__item">About</a>
+                    <a href="#" class="footer__item">How This was Made.</a>
+                </div>
+            </section>
+        </div>
     </footer>
 </body>
 </html>
