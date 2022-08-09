@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microblog</title>
+    <title>Kekeli-Microblog</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header class="navbar">
         <div class="navbar__brand">
-            <img src="microblog-logo.svg" alt="Microblog Logo">Microblog
+            <img class="navbar__logo" src="microblog-logo.svg" alt="Microblog Logo">MICROBLOG
         </div>
         <ul class="navbar__navigation">
             <li class="navbar__navigation-item"><a href="#" class="navbar__link">Recent</a></li>
@@ -16,16 +18,16 @@
         </ul>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <h1>Add new Entry</h1>
-            <form action="/entry" method="post">
+            <form class="form" action="/entry" method="POST">
                 <p class="form__input">
-                    <label for="entry">Entry Contents</label>
-                    <textarea name="content" id="entry"></textarea>
+
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
                 </p>
 
-                <button type="submit">Add Entry</button>
+                <button type="submit" class="form__submit">Add Entry</button>
 
             </form>
 
@@ -33,16 +35,15 @@
 
         <section>
             <h1>Recent Posts</h1>
-            <article>
+            <article class="entry">
                 <div>
-                    <h2>A bit of a chill day</h2>
-                    <time datetime="01-05-2022">May 1</time>
+                    <h2 class="entry__title">A bit of a chill day</h2>
+                    <time class="entry__date" datetime="01-05-2022">⦿ May 1</time>
                 </div>
-                <p>Today, I traveled to Kumasi.I did not code.</p>
+                <p class="entry__content">Today, I traveled to Kumasi.I did not code.</p>
 
             </article>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -67,3 +68,4 @@
     </footer>
 </body>
 </html>
+
