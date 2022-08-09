@@ -17,16 +17,16 @@
         </ul>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <h1>Add new Entry</h1>
-            <form action="/entry" method="post">
+            <form class="form" action="/entry" method="POST">
                 <p class="form__input">
-                    <label for="entry">Entry Contents</label>
-                    <textarea name="content" id="entry"></textarea>
+                    
+                    <textarea name="content" id="entry" class="form__textarea" aria-label="Entry contents"></textarea>
                 </p>
 
-                <button type="submit">Add Entry</button>
+                <button type="submit" class="form__submit">Add Entry</button>
 
             </form>
 
@@ -43,7 +43,6 @@
 
             </article>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -68,3 +67,4 @@
     </footer>
 </body>
 </html>
+
